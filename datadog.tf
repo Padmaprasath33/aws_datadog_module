@@ -118,6 +118,6 @@ resource "aws_iam_role_policy_attachment" "datadog_aws_integration" {
 }
 
 resource "datadog_integration_aws" "sandbox" {
-   account_id  = "500452054617"
+   account_id  = var.aws_account_id
    role_name   = "DatadogAWSIntegrationRole"
 }
